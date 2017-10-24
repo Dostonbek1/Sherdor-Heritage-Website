@@ -1,0 +1,455 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica;
+    background: url('http://silk-and-spices.com/wp-content/uploads/2016/04/%D1%8F%D1%8F%D1%8F.jpg') fixed;/* Taken from the Internet */
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+#body {
+	background-color: rgba(255,255,255,0.95);
+	width: 1100px;
+	margin: 3px auto;
+	border: 1px solid blue;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+/* Navigation start */
+
+#navbar {
+	background-color: #222288;
+	height: 64px;
+	display: block;
+}
+
+#navbar-brand {
+	text-decoration: none;
+	font-size: 30px;
+	margin: -10px 0 0 40px;
+	padding: 0;
+	display: inline-block;
+	color: #E0E0E0;
+}
+
+#brand {
+	display: inline-block;
+	font-size: 40px;
+	padding: 0;
+	margin: 0;
+    letter-spacing: 1.5px;
+}
+
+#brand:hover {
+	color: #FFFFFF;
+}
+
+#navbar-list {
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+	margin: 10px;
+}
+
+ul#navbar-list a.active {
+	border-bottom: 3px solid #E0E0E0;
+	padding-bottom: 5px;
+	background: none;
+}
+
+#navbar-list a li {
+	text-decoration: none;
+	display: inline-block;
+	margin: 14px 10px;
+	font-weight: bold;
+	color: #E0E0E0;
+	letter-spacing: 1px;
+	border-bottom: 3px solid transparent;
+}
+
+#navbar-list a:hover {
+	padding-bottom: 5px;
+    border-bottom: 3px solid #E0E0E0;
+}
+
+/* Navigation end */
+
+
+/* Slideshow container start (Taken from www.w3schools.com) */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: 0 0 0;
+  display: block;
+}
+
+.mySlides {
+    display: none;
+    margin-top: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1.4px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+/* Slideshow container end */
+
+
+/* Section: quotesmen start */
+
+section#main {
+	display: inline-block;
+	width: 65%;
+	border-top: 1px dashed blue;
+	border-right: 3px solid blue;
+	border-bottom: none;
+	border-left: none;
+	height: 1130px;
+}
+
+section#quotesmen article {
+	display: inline-block;
+	margin: 5px;
+	width: 100%;
+}
+
+section#quotesmen p img {
+	display: inline;
+	float: left;
+	width:250px;
+	height: 250px;
+	margin: 0px 10px 5px 20px;
+	padding: 5px;
+	border: 2px solid blue;
+	border-radius: 5px;
+}
+
+article.quote p {
+	text-align: center;
+	letter-spacing: 2px;
+	line-height: 30px;
+	font-size: 20px;
+	margin: auto ;
+	font-weight: bold;
+	font-style: italic;
+}
+
+blockquote footer {
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+
+
+/* Section: quotesmen  end*/
+
+
+/* Section: ancestors-table start */
+
+table caption {
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	color: darkblue;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    width: 97%;
+    margin: 10px;
+    border: 1px solid blue;
+    border-spacing: 5px;
+}
+
+.darkblue {
+	color: darkblue;
+	font-size: 18px;
+}
+
+td, th {
+    border: 1px solid blue;
+    text-align: left;
+    padding: 12px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#morebtn {
+	padding: 10px 15px;
+	display: inline-block;
+	background-color: #5E35B1;
+	margin: 2px 0 10px 30px;
+	border-radius: 5px;
+	
+}
+
+#morebtn a {
+    text-decoration: none;
+    color: #EDE7F6;
+}
+
+#morebtn a:hover {
+	color: white;
+}
+
+/* Section: ancestors-table end */
+
+
+/* aside: monuments start */
+
+aside#monuments {
+	display: inline-block;
+	width: 35%;
+	height: 1130px;
+	float: right;
+	margin-bottom: 0;
+    border-top: 1px dashed blue;
+}
+
+aside#monuments h2 {
+	text-align: center;
+	margin: 5px 0 2px 0;
+	color: #303F9F;
+}
+
+div#items {
+	padding: 10px;
+	margin: 0px;
+	border-bottom: 1px dashed blue;
+}
+
+div#items a img {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	float: left;
+	border: 1px solid blue;
+	border-radius: 5px;
+	padding: 3px;
+	margin-left: 10px;
+}
+
+#items-name {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#morebtn2 {
+	padding: 10px 15px;
+	display: inline-block;
+	background-color: #5E35B1;
+	margin: 20px 0 10px 30px;
+	border-radius: 5px;
+	
+}
+
+#morebtn2 a {
+    text-decoration: none;
+    color: #EDE7F6;
+}
+
+#morebtn2 a:hover {
+	color: white;
+}
+/* aside: monuments end */
+
+
+/* footer start */
+footer.bottom {
+	width: 100%;
+	height: 250px;
+	background-color: #222288;
+	margin: 0;
+}
+
+div.container {
+    width: 90%;
+    height: 250px;
+    margin: 10px auto 0;
+    text-align: center;
+
+}
+
+div.col1 {
+	width: 33%;
+	left: 0;
+	display: inline-block;
+	top: 0;
+}
+
+p.left {
+	text-align: left;
+	color: #E0E0E0;
+	letter-spacing: 1px;
+}
+
+div.col2 {
+	width: 33%;
+	left: 33%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+h2.sitemap {
+	color: #abc;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+.no-type {
+	list-style-type: none;
+	text-align: left;
+}
+
+div.col2 ul a, div.col3 ul a {
+	text-decoration: none;
+}
+
+div.col2 ul li {
+	color: #E0E0E0;
+	padding: 1px;
+	font-size: 15x;
+	margin: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+div.col2 ul li:hover {
+	background-color: white;
+	color: #616161;
+	text-transform: uppercase;
+	width: 200px;
+	border-radius: 4px;
+}
+div.col2 ul li.active {
+	background-color: white;
+	color: #616161;
+	text-transform: uppercase;
+	width: 200px;
+	border-radius: 4px;
+}
+
+
+div.col3 {
+	width: 33%;
+	right: 0;
+	display: inline-block;
+}
+
+div.col3 ul li {
+	color: #E0E0E0;
+	padding: 1px;
+	font-size: 15x;
+	margin: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+div.col3 ul li:hover {
+	color: white;
+}
+
+div.col3 ul li i {
+	border: 1px solid white;
+	border-radius: 4px;
+	width:25px;
+	height: 25px;
+	text-align: center;
+	padding: 3px 0;
+}
+
+div.col3 ul input {
+	height: 30px;
+	border-radius: 5px;
+}
+
+div.col3 ul button {
+	border-radius: 5px;
+	height: 30px;
+	width: 35px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
